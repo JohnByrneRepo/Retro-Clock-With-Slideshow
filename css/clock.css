@@ -1,0 +1,53 @@
+.retroClock {
+	color:#fff;
+	font-size:50px;
+	line-height:50px;
+	font-weight:bold;
+	padding:10px;
+	z-index:1;
+}
+.retroClock .gc-top, .retroClock .gc-bottom {
+	margin:0 auto;
+	position:relative;
+	width:252px;
+}
+.retroClock .gc-top div, .retroClock .gc-bottom div {
+	float:left;
+	padding:4px 10px;
+	background:#222;
+	margin:0 2px;
+	border-radius:4px;
+	border:1px solid #333;
+}
+.retroClock .gc-top div {
+	height:20px;
+	overflow:hidden;
+	border-bottom-left-radius:0;
+	border-bottom-right-radius:0;
+	border-bottom:0;
+}
+.retroClock .gc-bottom div {
+	height:20px;
+	overflow:hidden;
+	border-top-left-radius:0;
+	border-top-right-radius:0;
+	border-top:0;
+	background:#2a2a2a;
+}
+.retroClock .gc-bottom div span {
+	margin-top:-28px;
+	display:block;
+}
+.retroClock .gc-anim {
+	position:absolute !important;
+	top:0 !important;
+}
+.retroClock-input {
+	display:none;
+}
+
+.retroClock .gc-top:after, .retroClock .gc-bottom:after {
+	content:"";
+	display:table;
+	clear:both;
+}
